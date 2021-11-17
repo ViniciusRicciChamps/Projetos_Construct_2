@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <comment>Use the down arrow to allow the player to deliberately drop down through a jump-thru platform.</comment>
+        <event-block sid="246526650618930">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="517080789652643" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="12" name="Fall through" sid="584598148004899" type="Player" />
+            </actions>
+        </event-block>
+        <comment>Allow WASD as alternate controls to arrow keys.</comment>
+        <event-block sid="380249288343972">
+            <conditions>
+                <condition id="2" name="Key is down" sid="963104373481218" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="553205732264206" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="568890118911028">
+            <conditions>
+                <condition id="2" name="Key is down" sid="797420606323018" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="971044536694779" type="Player">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="887398993517734">
+            <conditions>
+                <condition id="2" name="Key is down" sid="143378248214899" type="Keyboard">
+                    <param id="0" name="Key">83</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="12" name="Fall through" sid="584087312537787" type="Player" />
+            </actions>
+        </event-block>
+        <event-block sid="909349070098840">
+            <conditions>
+                <condition id="2" name="Key is down" sid="157058064667820" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="285722984418947" type="Player">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Mirror the player&apos;s image so they appear facing the right way when moving left or right.</comment>
+        <event-block any="1" sid="122525347066902">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="672648433587002" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+                <condition id="0" name="On key pressed" sid="757668708195515" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="867909061473724" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="149884344686368">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="820710573447485" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+                <condition id="0" name="On key pressed" sid="691749499684890" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="398431293737670" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>If the player falls off the bottom of the layout, restart the level.</comment>
+        <event-block sid="807346229252194">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="490566142842940" type="Player">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">LayoutHeight</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="277206583092160" type="System" />
+            </actions>
+        </event-block>
+        <comment>VERIFICA SE A VARIAVEL Patrulhando é igual a 0  ou 1</comment>
+        <event-block sid="103605969431827">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="759352614052915" type="Sprite">
+                    <param id="0" name="Instance variable">Patrulhando</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="683114493962572" type="Sprite">
+                    <param id="0" name="Instance variable">atacando</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="651677339039834" type="Sprite">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="631896111669886" type="Sprite">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="792023520662304" type="Sprite">
+                    <param id="0" name="Animation">&quot;zumbi_walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="648427908554309">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="927556100717104" type="Sprite">
+                    <param id="0" name="Instance variable">Patrulhando</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="773967195602581" type="Sprite">
+                    <param id="0" name="Instance variable">atacando</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="282023107784426" type="Sprite">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="157739656195315" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="519179763098359" type="Sprite">
+                    <param id="0" name="Animation">&quot;zumbi_walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>SE O ZUMBI COLIDIR COM O BLOCO, VERIFICA AS VARIAVEIS</comment>
+        <event-block sid="770599616335096">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="797886227857893" type="Sprite">
+                    <param id="0" name="Object">borda_colisão</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="417937718653353">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="792370596789321" type="Sprite">
+                            <param id="0" name="Instance variable">Patrulhando</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="607764393166347" type="Sprite">
+                            <param id="0" name="Instance variable">Patrulhando</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="245686342959564">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="731394074163649" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="810757921690400" type="Sprite">
+                            <param id="0" name="Instance variable">Patrulhando</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>SE O PLAYER ENTRAR NO CAMPO DE VISÃO DO ZUMBI, FAÇA ALGO</comment>
+        <event-block sid="924789487994721">
+            <conditions>
+                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="903800241355711" type="Sprite">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="439573539746339">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="736006651697016" type="Player">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">Sprite.X</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="177907131905354" type="Sprite">
+                            <param id="0" name="Instance variable">Patrulhando</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="593967737707540">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="851273146158942" type="Player">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">Sprite.X</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="884673250959971" type="Sprite">
+                            <param id="0" name="Instance variable">Patrulhando</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>SE O ZUMBI ESTIVER SOBREPONDO O PLAYER, FAÇA ALGO</comment>
+        <event-block sid="474400643911764">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="658921719263461" type="Sprite">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="504290248408095" type="Sprite">
+                    <param id="0" name="Animation">&quot;zumbi_attack&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="775953915868930" type="Sprite">
+                    <param id="0" name="Instance variable">atacando</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="850844853798697" type="Player">
+                    <param id="0" name="Animation">&quot;hurt&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>SE FOR FALSO O A SOBREPOSIÇÃO...</comment>
+        <event-block sid="940281685471560">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="997520149276382" type="Sprite">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="827519849224586" type="Sprite">
+                    <param id="0" name="Instance variable">atacando</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>CRIAR 2 VARIAVEIS PARA O ZUMBI, UMA COM O NOME DE &quot;Patrulhando&quot; COM VALOR &apos;0&apos; e OUTRA &quot;Atacando&quot; COM VALOR 0</comment>
+        <comment>ADICIONAR UM BEHAVIORS &quot;LineOfSight&quot; NO ZUMBI E DEFINIR A PROPRIEDADE &apos;Range&apos;  com 200</comment>
+    </events>
+</c2eventsheet>

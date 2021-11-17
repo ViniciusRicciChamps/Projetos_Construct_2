@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <app-id></app-id>
+    <unique-id>3phjf8c2bcezm</unique-id>
+    <saved-with-version>27900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>840</width>
+        <height>680</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Hide address bar">No</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use iOS retina display">All devices</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Player" sid="577318046466483">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="155074671724143">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="235499061234921">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="10" loop="0" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="211649786743295" speed="20">
+                    <frame duration="1" hotspotX="0.501104" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\01-Idle\E_E_Gun__Idle_000.png" />
+                    <frame duration="1" hotspotX="0.501099" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\01-Idle\E_E_Gun__Idle_001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\01-Idle\E_E_Gun__Idle_002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\01-Idle\E_E_Gun__Idle_003.png" />
+                    <frame duration="1" hotspotX="0.501099" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\01-Idle\E_E_Gun__Idle_004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\01-Idle\E_E_Gun__Idle_005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\01-Idle\E_E_Gun__Idle_006.png" />
+                    <frame duration="1" hotspotX="0.501104" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\01-Idle\E_E_Gun__Idle_007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\01-Idle\E_E_Gun__Idle_008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\01-Idle\E_E_Gun__Idle_009.png" />
+                </animation>
+                <animation framecount="10" loop="0" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="220947864645293" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\02-Run\E_E_Gun__Run_000_000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\02-Run\E_E_Gun__Run_000_001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\02-Run\E_E_Gun__Run_000_002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\02-Run\E_E_Gun__Run_000_003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\02-Run\E_E_Gun__Run_000_004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\02-Run\E_E_Gun__Run_000_005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\02-Run\E_E_Gun__Run_000_006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\02-Run\E_E_Gun__Run_000_007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\02-Run\E_E_Gun__Run_000_008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\02-Run\E_E_Gun__Run_000_009.png" />
+                </animation>
+                <animation framecount="10" loop="0" name="hurt" pingpong="0" repeatcount="1" repeatto="0" sid="916189374626918" speed="20">
+                    <frame duration="1" hotspotX="0.501104" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\04-Hurt\E_E_Gun__Hurt_000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\04-Hurt\E_E_Gun__Hurt_001.png" />
+                    <frame duration="1" hotspotX="0.501104" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\04-Hurt\E_E_Gun__Hurt_002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\04-Hurt\E_E_Gun__Hurt_003.png" />
+                    <frame duration="1" hotspotX="0.501104" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\04-Hurt\E_E_Gun__Hurt_004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\04-Hurt\E_E_Gun__Hurt_005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\04-Hurt\E_E_Gun__Hurt_006.png" />
+                    <frame duration="1" hotspotX="0.501104" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\04-Hurt\E_E_Gun__Hurt_007.png" />
+                    <frame duration="1" hotspotX="0.501104" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\04-Hurt\E_E_Gun__Hurt_008.png" />
+                    <frame duration="1" hotspotX="0.501104" hotspotY="1" original-source="D:\Assets Store\Construct\Soldier-Guy-PNG\Soldier-Guy-PNG\_Mode-Gun\04-Hurt\E_E_Gun__Hurt_009.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SolidTile" sid="953923142414471">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="304205795609184">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Keyboard" sid="435744843167876">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Sprite" sid="228591890024241">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Patrulhando" sid="644350314121964" type="number" />
+                <instance-variable name="atacando" sid="987372056275358" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="429931192473330">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="837708678473289">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="10" loop="0" name="zumbi_idle" pingpong="0" repeatcount="1" repeatto="0" sid="280698667767275" speed="20">
+                    <frame duration="1" hotspotX="0.501401" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Idle\__Zombie01_Idle_000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Idle\__Zombie01_Idle_001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Idle\__Zombie01_Idle_002.png" />
+                    <frame duration="1" hotspotX="0.501433" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Idle\__Zombie01_Idle_003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Idle\__Zombie01_Idle_004.png" />
+                    <frame duration="1" hotspotX="0.501416" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Idle\__Zombie01_Idle_005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Idle\__Zombie01_Idle_006.png" />
+                    <frame duration="1" hotspotX="0.501393" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Idle\__Zombie01_Idle_007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Idle\__Zombie01_Idle_008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Idle\__Zombie01_Idle_009.png" />
+                </animation>
+                <animation framecount="10" loop="0" name="zumbi_walk" pingpong="0" repeatcount="1" repeatto="0" sid="326550388826576" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Walk\__Zombie01_Walk_000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Walk\__Zombie01_Walk_001.png" />
+                    <frame duration="1" hotspotX="0.501408" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Walk\__Zombie01_Walk_002.png" />
+                    <frame duration="1" hotspotX="0.501408" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Walk\__Zombie01_Walk_003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Walk\__Zombie01_Walk_004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Walk\__Zombie01_Walk_005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Walk\__Zombie01_Walk_006.png" />
+                    <frame duration="1" hotspotX="0.501408" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Walk\__Zombie01_Walk_007.png" />
+                    <frame duration="1" hotspotX="0.501408" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Walk\__Zombie01_Walk_008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Walk\__Zombie01_Walk_009.png" />
+                </animation>
+                <animation framecount="8" loop="0" name="zumbi_attack" pingpong="0" repeatcount="1" repeatto="0" sid="339832783355502" speed="20">
+                    <frame duration="1" hotspotX="0.501401" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Attack\__Zombie01_Attack_000.png" />
+                    <frame duration="1" hotspotX="0.501377" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Attack\__Zombie01_Attack_001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Attack\__Zombie01_Attack_002.png" />
+                    <frame duration="1" hotspotX="0.501416" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Attack\__Zombie01_Attack_003.png" />
+                    <frame duration="1" hotspotX="0.501511" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Attack\__Zombie01_Attack_004.png" />
+                    <frame duration="1" hotspotX="0.501529" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Attack\__Zombie01_Attack_005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Attack\__Zombie01_Attack_006.png" />
+                    <frame duration="1" hotspotX="0.501433" hotspotY="1" original-source="D:\Assets Store\Construct\ZombieOGA\ZombieOGA\Attack\__Zombie01_Attack_007.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="borda_colisão" sid="962148816509587">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="20" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
